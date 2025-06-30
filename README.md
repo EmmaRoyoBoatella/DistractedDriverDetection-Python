@@ -1,4 +1,4 @@
-# DistractedDriverDetection-Python
+# Distracted Driver Detection
 ## 1.Introduction
 This repository implements a deep-learning pipeline for distracted-driver classification, categorizing in-vehicle images into one of ten predefined behavior classes. Built with TensorFlow and Keras, the model ingests the State Farm Distracted Driver dataset, applies on-the-fly preprocessing, and learns robust feature representations via a customizable convolutional neural network architecture
 
