@@ -9,7 +9,7 @@ This project implements a memory-efficient TensorFlow/Keras pipeline to classify
 - **Data Pipeline**  
   - Stratified 75/10/15 train/validation/test splits  
   - On-the-fly pixel normalization  
-  - Optimized caching & prefetching via `tf.data`
+  - Optimized caching & prefetching
 
 - **Model Architecture**  
   - Parameterized 4-layer CNN builder  
@@ -29,7 +29,7 @@ This project implements a memory-efficient TensorFlow/Keras pipeline to classify
 The implementation is organized into the following stages:
 - **Library Imports:** Import TensorFlow, NumPy, Matplotlib, and supporting utilities for data I/O and visualization.
 - **Dataset Preparation:** Download and extract the State Farm dataset; organize images into class-labeled directories.
-- **Data Loading & Preprocessing:** Construct a `tf.data` pipeline that resizes frames, performs pixel-wise normalization, and applies stratified 75/10/15 train/validation/test splits. Optimized caching and prefetching ensure efficient throughput.
+- **Data Loading & Preprocessing:** Construct a pipeline that resizes frames, performs pixel-wise normalization, and applies stratified 75/10/15 train/validation/test splits. Optimized caching and prefetching ensure efficient throughput.
 - **Model Definition:** Instantiate a parameterized CNN builder that stacks four convolutional blocks with configurable filter depths, kernel sizes, ReLU/ELU activations, and dropout layers culminating in a softmax classification layer.
 - **Optimization Setup:** Configure the Adam optimizer with categorical crossentropy loss; define learning-rate schedules for systematic hyperparameter exploration.
 - **Training Loop:** Execute multi-epoch training while logging accuracy and loss on both training and validation subsets.
@@ -39,9 +39,9 @@ The implementation is organized into the following stages:
 - **Prerequisites:** Python 3.8+, TensorFlow 2.x, NumPy, Matplotlib, scikit-learn.
 - **Configuration:** Clone the repository and install dependencies via `pip install -r requirements.txt`.
 - **Execution:**
-  i. Download the Notebook
-  ii. Execute the code 
-  iii. Go to your Kaggle account and download the `Kaggle.json`
+  i. Download the Notebook `DistractedDriverDetection.ipynb`.
+  ii. Execute the code.
+  iii. Go to your Kaggle account and download the `Kaggle.json` and upload it when asked.
   
 Adjust flags to modify splits, network depth, or learning-rate schedules as needed.
 
