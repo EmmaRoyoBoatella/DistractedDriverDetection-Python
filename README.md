@@ -1,8 +1,8 @@
 # Distracted Driver Detection
-## 1.Introduction
+## 1. Introduction
 This repository implements a deep-learning pipeline for distracted-driver classification, categorizing in-vehicle images into one of ten predefined behavior classes. Built with TensorFlow and Keras, the model ingests the State Farm Distracted Driver dataset, applies on-the-fly preprocessing, and learns robust feature representations via a customizable convolutional neural network architecture
 
-## 2.Overview
+## 2. Overview
 
 This project implements a memory-efficient TensorFlow/Keras pipeline to classify in-vehicle images into one of ten distracted-driver behaviors. Key features include:
 
@@ -25,7 +25,7 @@ This project implements a memory-efficient TensorFlow/Keras pipeline to classify
   - Confusion-matrix generation  
   - Top-3 prediction visualization for detailed error analysis
 
-## 3.Project Structure
+## 3. Project Structure
 The implementation is organized into the following stages:
 - **Library Imports:** Import TensorFlow, NumPy, Matplotlib, and supporting utilities for data I/O and visualization.
 - **Dataset Preparation:** Download and extract the State Farm dataset; organize images into class-labeled directories.
@@ -35,7 +35,7 @@ The implementation is organized into the following stages:
 - **Training Loop:** Execute multi-epoch training while logging accuracy and loss on both training and validation subsets.
 - **Evaluation & Analysis:** Generate confusion matrices and top-three prediction visualizations to assess per-class performance and guide error analysis.
   
-## 4.How to Run the Project
+## 4. How to Run the Project
 - **Prerequisites:** Python 3.8+, TensorFlow 2.x, NumPy, Matplotlib, scikit-learn.
 - **Configuration:** Clone the repository and install dependencies via `pip install -r requirements.txt`.
 - **Execution:** Launch the main training script:
@@ -47,7 +47,7 @@ python train_distracted_driver.py \
 ```
 Adjust flags to modify splits, network depth, or learning-rate schedules as needed.
 
-## 5.Custom Image Prediction (Extension)
+## 5. Custom Image Prediction (Extension)
 To enable inference on user-provided images:
 - Place JPEG or PNG files into a designated `input_images/` folder.
 - Modify `predict.py` to point at your files and load the trained model checkpoint.
@@ -57,7 +57,7 @@ python predict.py --model checkpoint.h5 --input_dir input_images/
 ```
 The script will output predicted classes and confidence scores for each image.
 
-## 6.Dataset Availability
+## 6. Dataset Availability
 - State Farm Distracted Driver Dataset: Images and labels are hosted at Kaggle:
 https://www.kaggle.com/c/state-farm-distracted-driver-detection 
 - Preprocessed Splits: For convenience, pre-generated TFRecord files and directory structures are included in the `data/` folder. Users may bypass the download step by leveraging these files directly.
