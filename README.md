@@ -39,9 +39,9 @@ The implementation is organized into the following stages:
 - **Prerequisites:** Python 3.8+, TensorFlow 2.x, NumPy, Matplotlib, scikit-learn.
 - **Configuration:** Clone the repository and install dependencies via `pip install -r requirements.txt`.
 - **Execution:**
-  i. Download the Notebook `DistractedDriverDetection.ipynb`.
-  ii. Execute the code.
-  iii. Go to your Kaggle account and download the `Kaggle.json` and upload it when asked.
+  1. Download the Notebook `DistractedDriverDetection.ipynb`.
+  2. Execute the code.
+  3. Go to your Kaggle account and download the `Kaggle.json` and upload it when asked.
   
 Adjust flags to modify splits, network depth, or learning-rate schedules as needed.
 
