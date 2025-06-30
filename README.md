@@ -38,13 +38,11 @@ The implementation is organized into the following stages:
 ## 4. How to Run the Project
 - **Prerequisites:** Python 3.8+, TensorFlow 2.x, NumPy, Matplotlib, scikit-learn.
 - **Configuration:** Clone the repository and install dependencies via `pip install -r requirements.txt`.
-- **Execution:** Launch the main training script:
-```bash
-python train_distracted_driver.py \
-  --data_dir /path/to/statefarm_dataset \
-  --batch_size 32 \
-  --epochs 20
-```
+- **Execution:**
+  i. Download the Notebook
+  ii. Execute the code 
+  iii. Go to your Kaggle account and download the `Kaggle.json`
+  
 Adjust flags to modify splits, network depth, or learning-rate schedules as needed.
 
 ## 5. Dataset Availability
