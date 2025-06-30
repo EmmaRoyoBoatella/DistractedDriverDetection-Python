@@ -30,7 +30,7 @@ The implementation is organized into the following stages:
 - **Library Imports:** Import TensorFlow, NumPy, Matplotlib, and supporting utilities for data I/O and visualization.
 - **Dataset Preparation:** Download and extract the State Farm dataset; organize images into class-labeled directories.
 - **Data Loading & Preprocessing:** Construct a `tf.data` pipeline that resizes frames, performs pixel-wise normalization, and applies stratified 75/10/15 train/validation/test splits. Optimized caching and prefetching ensure efficient throughput.
-- **Model Definition:** Instantiate a parameterized CNN builder that stacks four convolutional blocks—with configurable filter depths, kernel sizes, ReLU/ELU activations, and dropout layers—culminating in a softmax classification layer.
+- **Model Definition:** Instantiate a parameterized CNN builder that stacks four convolutional blocks with configurable filter depths, kernel sizes, ReLU/ELU activations, and dropout layers culminating in a softmax classification layer.
 - **Optimization Setup:** Configure the Adam optimizer with categorical crossentropy loss; define learning-rate schedules for systematic hyperparameter exploration.
 - **Training Loop:** Execute multi-epoch training while logging accuracy and loss on both training and validation subsets.
 - **Evaluation & Analysis:** Generate confusion matrices and top-three prediction visualizations to assess per-class performance and guide error analysis.
@@ -60,4 +60,3 @@ The script will output predicted classes and confidence scores for each image.
 ## 6. Dataset Availability
 - State Farm Distracted Driver Dataset: Images and labels are hosted at Kaggle:
 https://www.kaggle.com/c/state-farm-distracted-driver-detection 
-- Preprocessed Splits: For convenience, pre-generated TFRecord files and directory structures are included in the `data/` folder. Users may bypass the download step by leveraging these files directly.
