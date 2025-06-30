@@ -49,4 +49,4 @@ Adjust flags to modify splits, network depth, or learning-rate schedules as need
 
 ## 5. Dataset Availability
 - State Farm Distracted Driver Dataset: Images and labels are hosted at Kaggle:
-https://www.kaggle.com/c/state-farm-distracted-driver-detection 
+  https://www.kaggle.com/c/state-farm-distracted-driver-detection 
