@@ -47,16 +47,6 @@ python train_distracted_driver.py \
 ```
 Adjust flags to modify splits, network depth, or learning-rate schedules as needed.
 
-## 5. Custom Image Prediction (Extension)
-To enable inference on user-provided images:
-- Place JPEG or PNG files into a designated `input_images/` folder.
-- Modify `predict.py` to point at your files and load the trained model checkpoint.
-- Execute:
-```bash
-python predict.py --model checkpoint.h5 --input_dir input_images/
-```
-The script will output predicted classes and confidence scores for each image.
-
-## 6. Dataset Availability
+## 5. Dataset Availability
 - State Farm Distracted Driver Dataset: Images and labels are hosted at Kaggle:
 https://www.kaggle.com/c/state-farm-distracted-driver-detection 
